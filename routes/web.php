@@ -34,8 +34,8 @@ Route::view("np3","np3");
 Route::post("userform",[userform::class,"getdata"]);
 Route::view("login", "userForm");
 
-// Route::get("layout", [layout::class, "webLayout"]);
-// Route::post("userForm", [userForm::class, "getData"]);
+Route::view("noaccess", "noaccess");
+Route::view("home", "home");
 
 
 
