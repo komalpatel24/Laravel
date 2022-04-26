@@ -8,12 +8,8 @@
   <title>header</title>
 </head>
 <body>
-  
-
-
-  <!-- <nav class="navbar navbar-expand-sm bg-secondary"> -->
-   <nav class="navbar navbar-warning bg-danger text-white ">
-  <div class="container">
+   <nav class="navbar navbar-inverse">
+  <div class="container-fluid">
     <div class="navbar-header">
       <a class="navbar-brand" href="#">WebSiteName</a>
     </div>
