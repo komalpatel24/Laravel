@@ -4,16 +4,16 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>nav</title>
+    <title>irctcp1</title>
 </head>
 <body>
     <form action="irctcSecondPage.html">
         <fieldset style="width: 43%; ">
        <div><h1  style="display: inline;">Create Your account</h1> <span style="color: orange; margin-left: 225px;"><u>SIGN IN</u></span></div><br>
        <div style=" padding:15px; font-size:22px;display:flex;">
-        <a href="nav" style="padding:16px;text-decoration: none; color:black;"><b>Basic Details</b></a> 
-            <a href="np2" style="padding:22px;text-decoration: none; color:black;"><b>Personal Details</b></a> 
-                <a href="np3" style="padding:22px;text-decoration: none; color:black"><b>Address</b></a>
+        <a href="irctcp1" style="padding:16px;text-decoration: none; color:black;"><b>Basic Details</b></a> 
+            <a href="irctcp2" style="padding:22px;text-decoration: none; color:black;"><b>Personal Details</b></a> 
+                <a href="irctcp3" style="padding:22px;text-decoration: none; color:black"><b>Address</b></a>
            </div><hr><br>
 
        <p><b>GARBAGE/JUNK VALUES IN PROFILE MAY LEAD TO DEACTIVATION</b><br>

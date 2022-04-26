@@ -16,8 +16,8 @@ class chkcountry
      */
     public function handle(Request $request, Closure $next)
     {
-         // echo "<h1><b>Middleware is called</b></h1>";
-         if ($request->country && !in_array($request->country, array("india","Gujarat","delhi"))){
+        //  echo "<h1><b>Middleware is called</b></h1>";
+         if ($request->country && !in_array($request->country, array("india","Gujarat","Mumbai"))) {
             return redirect("noaccess");
         }
         return $next($request);

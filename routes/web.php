@@ -17,7 +17,7 @@ use App\Http\Controllers\userform;
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view("home");
 });
  Route::get('page1', function () {
     return view('page1');
@@ -27,15 +27,18 @@ Route::get('page2', function () {
 });
 Route::get("marksheet/{sub1}/{sub2}/{sub3}/{sub4}/{sub5}/{sub6}",[marksheet::class,"getPercentage"]);
 Route::get("layout",[Layout::class,"weblayout"]);
-Route::view("nav","navbar");
-Route::view("np2","np2");
-Route::view("np3","np3");
+Route::view("gallary","gallary");
 
-Route::post("userform",[userform::class,"getdata"]);
-Route::view("login", "userForm");
+Route::view("irctcp1","irctcp1");
+Route::view("irctcp2","irctcp2");
+Route::view("irctcp3","irctcp3");
+
+Route::post("registration",[userform::class,"getdata"]);
+Route::view("registration", "Registration");
+Route::view("login","login");
 
 Route::view("noaccess", "noaccess");
-Route::view("home", "home");
+Route::view("middleware", "middleware");
 
 
 
