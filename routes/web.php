@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\layout;
+use App\Http\Controllers\login;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\marksheet;
 use App\Http\Controllers\userform;
@@ -35,6 +36,7 @@ Route::view("irctcp3","irctcp3");
 
 Route::post("registration",[userform::class,"getdata"]);
 Route::view("registration", "Registration");
+Route::post("login",[login::class,"display"]);
 Route::view("login","login");
 
 Route::view("noaccess", "noaccess");

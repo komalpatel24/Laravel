@@ -5,38 +5,37 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>home</title>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    
     <style>
         body{
-            background-color: lightseagreen;
-            text-align: center;
+            background-color: #b3ffff;
         }
-        h1 {
-            margin-top: 18%;
-            font-size: 80px;
-            color: #dfdfdf;
-
-text-shadow: 0 2px 2px #dfdfdf, 
-      -2px 5px 1px #b8b8b8, 
-      -4px 8px 0px #979797, 
-      -6px 11px 0px #747474,
-      -8px 14px 0px #565656,
-      -10px 17px 0px #343434,
-      -12px 20px 0px #171717,
-      -14px 23px 0px #000;
-        }
-    </style>
+   .text{
+        margin-top: 10%;
+        font-size: 90px;
+	    text-align: center;
+        color: #fcedd8;
+	    font-family: 'Niconne', cursive;
+	    font-weight: 700;
+      text-shadow: 5px 5px 0px #eb452b, 
+                  10px 10px 0px #efa032, 
+                  15px 15px 0px #46b59b, 
+                  20px 20px 0px #017e7f, 
+                  25px 25px 0px #052939, 
+                  30px 30px 0px #c11a2b, 
+                  35px 35px 0px #c11a2b, 
+                  40px 40px 0px #c11a2b, 
+                  45px 45px 0px #c11a2b;
+    }
+</style>
 </head>
-<body>
-<div class="header">
-    @include("header")
-        <div class="row justify-content-center p-5">
-            <h1>Ziddi BUT <br> Cute</h1>
+<body style=" background-color: #b3ffff;">
+    <div class="container-fluid">
+        @include('header');
+        <div>
+           <h1 class="text">Ziddi BUT <br> Cute</h1>
         </div>
     </div>
-   
    
 </body>
 </html>

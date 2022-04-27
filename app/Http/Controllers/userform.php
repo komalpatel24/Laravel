@@ -10,7 +10,7 @@ class userform extends Controller
     {
 
         $req->validate([
-            'firstname' => 'required| min:3 | max:10 | alpha',
+            'firstname' => 'required | min:3 | max:10 | alpha',
             'lastname' => 'required | min:3 | max:10 | alpha',
             'password' => 'required | max:8',
             'confirm_password' => 'required | max:8',
