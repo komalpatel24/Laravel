@@ -20,7 +20,8 @@ class userform extends Controller
             'date_of_birth' => 'required',
             'salary' => 'required | numeric',
             'email' => 'required | email',
-            'mobile_no' => 'required | numeric'
+            'mobile_no' => 'required | numeric',
+            'Imagefile' => 'required'
         ]);
         return $req->input();
     }

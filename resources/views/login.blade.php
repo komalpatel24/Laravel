@@ -5,9 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login</title>
+   
 </head>
 <body>
-     @include('header');
+     @include('header')
 <div class="container  border shadow" style="background-image: url(../emoji/Registration-1.jpg);
     background-repeat: no-repeat;  background-size:cover;">
     
@@ -27,6 +28,7 @@
          <div class="form-group">
                 <button type="reset" class="btn btn-warning">Reset</button>
                 <button class="btn btn-dark">submit</button>
+                <p style="color: white;"> Don't have an account <a href="registration">Registration</a></p>
             </div>
             </form>
             </div>

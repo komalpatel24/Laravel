@@ -11,19 +11,27 @@
      a:hover {
        background-color: #b3ffff;
      }
-   </style>
+    
+        #txt {
+            color: red;
+        }
+        .navbar a:hover{
+            background-color:orange;
+            transition: all 0.6s;
+        }
+     </style>
   
 </head>
 <body>
-   <nav class="navbar navbar-inverse">
+   <nav class="navbar navbar">
   <div class="container-fluid">
     <div class="navbar-header">
       <a class="navbar-brand" href="#">WebSiteName</a>
     </div>
     <ul class="nav navbar-nav">
-      <li class="active"><a href="#" class="btn  btn-md m-1">Home</a></li>
-      <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Cource<span class="caret"></span></a>
-        <ul class="dropdown-menu">
+      <li class="active"><a href="#" class="btn  btn-md m-1">HOME</a></li>
+      <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">COURSE<span class="caret"></span></a>
+        <ul class="dropdown-menu bg-info" style="color: blue;">
           <li><a href="#">Full Stack</a></li>
           <li><a href="#">Web Designing</a></li>
           <li><a href="#">Web Development</a></li>
