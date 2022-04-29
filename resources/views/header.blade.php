@@ -10,14 +10,38 @@
    <style>
      a:hover {
        background-color: #b3ffff;
-     }
-    
-        #txt {
-            color: red;
-        }
-        .navbar a:hover{
+       }
+       .navbar a:hover{
             background-color:orange;
             transition: all 0.6s;
+        }
+       li a, .dropbtn {
+          display: inline-block;
+          text-align: center;
+          padding: 14px 16px;
+          text-decoration: none;
+          border-radius: 3px;
+       }
+        .dropdown-content {
+          display: none;
+          position: absolute;
+          background-color: #f9f9f9;
+          min-width: 160px;
+          box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+          z-index: 1;
+        }
+
+        .dropdown-content a {
+          color: black;
+          padding: 12px 16px;
+          text-decoration: none;
+          display: block;
+          text-align: left;
+        }
+
+        /* .dropdown-content a:hover {background-color: #b3ffff;} */
+        .dropdown:hover .dropdown-content {
+          display: block;
         }
      </style>
   
@@ -30,16 +54,21 @@
     </div>
     <ul class="nav navbar-nav">
       <li class="active"><a href="#" class="btn  btn-md m-1">HOME</a></li>
-      <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">COURSE<span class="caret"></span></a>
-        <ul class="dropdown-menu bg-info" style="color: blue;">
-          <li><a href="#">Full Stack</a></li>
-          <li><a href="#">Web Designing</a></li>
-          <li><a href="#">Web Development</a></li>
-          <li><a href="#">Graphic Design</a></li>
-          <li><a href="#">Video Editing </a></li>
-          <li><a href="#">CCC</a></li>
-          <li><a href="#">Tally</a></li>
-        </ul>
+      
+      <li class="dropdown">
+        <!-- <a class="dropdown-toggle" data-toggle="dropdown" href="#" aria-expanded="false">COURSE<span class="caret"></span></a> -->
+        <!-- <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink"> -->
+        <a href="javascript:void(0)" class="dropbtn" class="btn  btn-md m-1">COURSE</a>
+        <div class="dropdown-content">
+          <a class="dropdown-item" href="#">Full Stack</a>
+          <a class="dropdown-item" href="#">Web Designing</a>
+          <a class="dropdown-item" href="#">Web Development</a>
+          <a class="dropdown-item" href="#">Graphic Design</a>
+          <a class="dropdown-item" href="#">Video Editing </a>
+          <a class="dropdown-item" href="#">CCC</a>
+          <a class="dropdown-item" href="#">Tally</a>
+        <!-- </ul> -->
+        </div>
       </li>
       <li><a href="registration" class="btn  btn-md m-1">REGISTRATION</a></li>
       <li><a href="login" class="btn  btn-md m-1">LOGIN </a></li>
