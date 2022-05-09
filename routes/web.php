@@ -5,6 +5,8 @@ use App\Http\Controllers\login;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\marksheet;
 use App\Http\Controllers\userform;
+use App\Http\Controllers\dbtest;
+use App\Http\Controllers\Usercontroller;
 
 /*
 |--------------------------------------------------------------------------
@@ -40,8 +42,11 @@ Route::view("registration", "Registration");
 Route::post("login",[login::class,"display"]);
 Route::view("login","login");
 
+#Globle middleware
 Route::view("noaccess", "noaccess");
 Route::view("middleware", "middleware");
 
+Route::get('dbtest', [dbtest::class, "dbCheck"]);
+Route::get('modalDB', [Usercontroller::class,"fetchData"]);
 
 

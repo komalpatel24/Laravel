@@ -8,6 +8,11 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"> 
    <title>header</title>
    <style>
+    .navbar{
+      position: -webkit-sticky; /* Safari */
+      position: sticky;
+      top: 0;
+     }
      a:hover {
        background-color: #b3ffff;
        }
