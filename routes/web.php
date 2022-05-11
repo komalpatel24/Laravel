@@ -6,6 +6,7 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\marksheet;
 use App\Http\Controllers\userform;
 use App\Http\Controllers\dbtest;
+use App\Http\Controllers\HttpRequest;
 use App\Http\Controllers\Usercontroller;
 
 /*
@@ -46,7 +47,9 @@ Route::view("login","login");
 Route::view("noaccess", "noaccess");
 Route::view("middleware", "middleware");
 
+#Fetch data from database
 Route::get('dbtest', [dbtest::class, "dbCheck"]);
 Route::get('modalDB', [Usercontroller::class,"fetchData"]);
+Route::get('Http', [HttpRequest::class,"info"]);
 
 

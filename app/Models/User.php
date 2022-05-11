@@ -9,5 +9,4 @@ class User extends Model
 {
     use HasFactory;
     
-
 }
