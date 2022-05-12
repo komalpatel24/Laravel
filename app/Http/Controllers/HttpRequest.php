@@ -7,7 +7,7 @@ use Illuminate\Support\Facades\Http;
 
 class HttpRequest extends Controller
 {
-    //
+    
     function info()
     {
         $collection = Http::get('https://reqres.in/api/users?page=1');

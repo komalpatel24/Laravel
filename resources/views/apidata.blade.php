@@ -12,7 +12,7 @@
             font-family: sans-serif;
         }
         .table{
-            background-color:rgb(89, 89, 89,0.8);
+            background-color:rgb(89, 89, 89,0.6);
             border: 1px solid black;
         }
         .main{
