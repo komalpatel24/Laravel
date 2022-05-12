@@ -12,6 +12,8 @@
       position: -webkit-sticky; /* Safari */
       position: sticky;
       top: 0;
+      display: flex;
+      
      }
      a:hover {
        background-color: #b3ffff;
@@ -58,7 +60,7 @@
       <a class="navbar-brand" href="#">WebSiteName</a>
     </div>
     <ul class="nav navbar-nav">
-      <li class="active"><a href="#" class="btn  btn-md m-1">HOME</a></li>
+      <li class="active"><a href="main" class="btn  btn-md m-1">HOME</a></li>
       
       <li class="dropdown">
         <!-- <a class="dropdown-toggle" data-toggle="dropdown" href="#" aria-expanded="false">COURSE<span class="caret"></span></a> -->

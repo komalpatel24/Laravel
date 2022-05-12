@@ -1,57 +1,55 @@
 <!DOCTYPE html>
 <html>
-
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-
     <title>Laravel</title>
-
     <!-- Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
-
+    
+     <link rel="stylesheet" href="{{asset('css/home.css')}}">
     <style>
         body {
             font-family: sans-serif;
         }
-        
-    </style>
+        .table{
+            background-color:rgb(89, 89, 89,0.8);
+            border: 1px solid black;
+        }
+        .main{
+           background-image: url('../emoji/bg4.jpg');
+            background-repeat: no-repeat;
+            background-size: cover;
+            width:100%;
+            height:800px;
+         }
+          </style>
 </head>
 
 <body>
-    <div class="container">
-        <div class="row">
-            <div class="col-6">
-                <h1 style="font-size:60px;">API DATA</h1>
-            </div>
-        </div>
-    </div>
+    <div class="main">
+        @include('header')
+     <div class="container">
+    <h1 style="font-size:40px;">API DATA</h1>
     <br>
-
-    <div class="container">
         <table class="table">
-            <thead>
-                <tr style="background-color: black; color:white; font-size:20px;">
+            <tr style="height:50px; font-size:20px;">
                     <th>id</th>
                     <th>name</th>
                     <th>email</th>
                     <th>Photo</th>
                 </tr>
-            </thead>
-            <tbody>
-                @foreach($collection as $item)
+               @foreach($collection as $data)
                 <tr>
-                    <td>{{$item['id']}}</td>
-                    <td>{{$item['first_name']}}</td>
-                    <td>{{$item['email']}}</td>
-                    <td><img src={{$item['avatar']}} height="50px" /></td>
+                    <td>{{$data['id']}}</td>
+                    <td>{{$data['first_name']}}</td>
+                    <td>{{$data['email']}}</td>
+                    <td><img src={{$data['avatar']}} height="50px"></td>
                 </tr>
                 @endforeach
-            </tbody>
+            
         </table>
     </div>
-
+    </div>
 </body>
 
 </html>
