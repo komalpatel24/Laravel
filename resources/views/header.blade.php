@@ -18,6 +18,9 @@
      a:hover {
        background-color: #b3ffff;
        }
+       .btn a:hover {
+          background-color: greenyellow;
+       }
        .navbar a:hover{
             background-color:orange;
             transition: all 0.6s;
@@ -49,6 +52,9 @@
         /* .dropdown-content a:hover {background-color: #b3ffff;} */
         .dropdown:hover .dropdown-content {
           display: block;
+        }
+        .dropdown-content{
+          border-radius: 8px;
         }
      </style>
   
