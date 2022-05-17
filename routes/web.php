@@ -8,6 +8,7 @@ use App\Http\Controllers\userform;
 use App\Http\Controllers\dbtest;
 use App\Http\Controllers\HttpRequest;
 use App\Http\Controllers\Usercontroller;
+use GuzzleHttp\Middleware;
 
 /*
 |--------------------------------------------------------------------------
@@ -22,7 +23,9 @@ use App\Http\Controllers\Usercontroller;
 
 Route::get('/', function () {
     return view("main");
-});
+
+})->Middleware('test');
+
  Route::get('page1', function () {
     return view('page1');
 });
@@ -46,10 +49,18 @@ Route::view("login","login");
 #Globle middleware
 Route::view("noaccess", "noaccess");
 Route::view("middleware", "middleware");
+#group middleware
+Route::group(['middleware' => ['admin']], function () {
+    Route::view("gallary", "gallary");
+    Route::view("main","main");
+});
+
 
 #Fetch data from database
 Route::get('dbtest', [dbtest::class, "dbCheck"]);
 Route::get('modalDB', [Usercontroller::class,"fetchData"]);
 Route::get('Http', [HttpRequest::class,"info"]);
+
+#
 
 

@@ -13,6 +13,17 @@ class Usercontroller extends Controller
     {
         return User::all();
     }
+    function fetchFormData(Request $req)
+    {
+        return $req->input();
+    }
+    function userLogin(Request $req)
+    {
+        $data = $req->input();
+        $req->session()->put('user',$data['userName']);
+        echo session('userName');
+        return redirect('profile');
+    }
 }
 
 

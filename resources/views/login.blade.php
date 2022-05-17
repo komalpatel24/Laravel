@@ -22,7 +22,7 @@
          </div>
          <div class="form-group text-light">
                         <label for="" style="color: white;">password</label>
-                        <input type="text" name="password" placeholder="password" class="form-control">
+                        <input type="password" name="password" placeholder="password" class="form-control">
                         <small class="form-text  text-danger">@error('password'){{$message}}@enderror</small>
          </div>
          <div class="form-group">

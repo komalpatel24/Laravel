@@ -12,20 +12,24 @@
           margin: 0px;
           padding: 0px;
       }
+      .navbar{
+          background-color:#4d4d4d;
+      }
      
   </style>
 </head>
 
 <body>
    @include('header')
-    <div class="container  border shadow" style="background-image: url(../emoji/Registration-1.jpg);
-    background-repeat: no-repeat;  background-size:cover; height:100vh; width:80%;">
+   <!-- <div class="container" style="background-color: #4d4d4d;"> -->
+     <div class="container  border shadow" style="background-image: url(../emoji/Registration-1.jpg);
+    background-repeat: no-repeat;  background-size:cover;"> 
         <!-- @if($errors->any())
         @foreach($errors->all() as $error)
         <li>{{$error}}</li>
         @endforeach
         @endif -->
-        <form action="registration" method="POST" enctype="multipart/form-data" style="height:auto; width:100%; ">
+        <form action="registration" method="POST" enctype="multipart/form-data">
             @csrf
             <h1 style="text-align: center;">Registration</h1><br>
             <div class="row">
@@ -77,9 +81,8 @@
                                 <option value="Shipping">Shipping</option>
                             </select>
                             <small class="form-text text-danger">@error('department'){{$message}}@enderror</small>
-                        
-                    </div>
-                </div>
+                 </div>
+            </div>
                 <div class="col col-sm-3">
                     <div class="form-group" style="margin-left: 50px;">
                         <label for="" style="color: white;" >  Gender :</label> <br>
@@ -149,9 +152,8 @@
              </div>
         </div>
     </div>
-
     
-            <div class="form-group">
+    <div class="form-group">
                 <input type="checkbox" value=""  style="color: white; "> <label style="color:white;"> Remember me</label>
                
             <div class="form-group">
@@ -160,10 +162,8 @@
                <p style="color: white;"> Already have an account <a href="login">Login here</a></p>
             </div>
            </div> 
-
-
- </div>
  </form>
+    </div>
 </body>
 
 </html>
