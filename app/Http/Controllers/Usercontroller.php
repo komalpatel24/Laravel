@@ -17,11 +17,11 @@ class Usercontroller extends Controller
     {
         return $req->input();
     }
-    function userLogin(Request $req)
+    function login(Request $req)
     {
         $data = $req->input();
-        $req->session()->put('user',$data['userName']);
-        echo session('userName');
+        $req->session()->put('user',$data['username']);
+        // echo session('userName');
         return redirect('profile');
     }
 }
