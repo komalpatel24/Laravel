@@ -17,7 +17,7 @@
     <h1 style="text-align:center;">Login</h1><br>
            <div class="form-group text-light">
                         <label for="" style="color: white;">username</label>
-                        <input type="text" name="username" placeholder="UserName" autofocus class="form-control">
+                        <input type="text" name="username" placeholder="UserName"  class="form-control" autofocus>
                         <small class="form-text  text-danger">@error('username'){{$message}}@enderror</small>
          </div>
          <div class="form-group text-light">

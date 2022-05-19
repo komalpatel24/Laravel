@@ -13,16 +13,16 @@
     <title>Profile</title>
     <style>
         #txt {
-            color: orange;
+            color: white;
         }
         .container a:hover{
-            background-color: yellowgreen;
+            background-color: white;
             transition: all 0.6s;
             color: black;
         }
         .container{
             background-color:rgba(0, 0, 0, 0.6);
-            border: 1px solid black;
+            border: 0.2px solid black;
         }
         .nav li a{
             color:white;

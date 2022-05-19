@@ -50,6 +50,12 @@ Route::post("users",[usersform::class,"getdata"]);
 Route::post("usersData", [UserController::class, "fetchFormData"]);
 Route::post("login", [UserController::class, "login"]);
 Route::view("profile", "profile");
+Route::get('/logout', function () {
+    if(session()->has('user')){
+        session()->pull('user');
+    }
+    return redirect('login');
+});
 
 
 
