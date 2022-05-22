@@ -12,18 +12,25 @@
           margin: 0px;
           padding: 0px;
       }
-      .navbar{
-          background-color:#4d4d4d;
+      .head{
+          background-color:rgb(77, 77, 77);
       }
-     
+      .container-fluid a{
+          color: white;
+      }
+     body{
+        background-image: url(../emoji/Registration-1.jpg);
+        background-repeat: no-repeat; 
+        background-size:cover;
+     }
   </style>
 </head>
 
 <body>
-   @include('header')
-   <!-- <div class="container" style="background-color: #4d4d4d;"> -->
-     <div class="container  border shadow" style="background-image: url(../emoji/Registration-1.jpg);
-    background-repeat: no-repeat;  background-size:cover;"> 
+   @include('nav')
+   <div class="container" style="background-color:rgba(0, 0, 0, 0.6);">
+     <!-- <div class="container  border shadow" style="background-image: url(../emoji/Registration-1.jpg);
+    background-repeat: no-repeat;  background-size:cover;">  -->
         <!-- @if($errors->any())
         @foreach($errors->all() as $error)
         <li>{{$error}}</li>
@@ -31,7 +38,7 @@
         @endif -->
         <form action="registration" method="POST" enctype="multipart/form-data">
             @csrf
-            <h1 style="text-align: center;">Registration</h1><br>
+            <h1 style="text-align: center; color:white;">Registration</h1><br>
             <div class="row">
                 <div class="col col-sm-6">
                     <div class="form-group text-light">
@@ -158,8 +165,8 @@
                
             <div class="form-group">
                 <button type="reset" class="btn btn-warning">Reset</button>
-                <button class="btn btn-dark">submit</button>
-               <p style="color: white;"> Already have an account <a href="login">Login here</a></p>
+                <button class="btn btn-dark" style="background-color: #001f33; color:white;">Submit</button>
+               <p style="color: white;"> Already have an account <a href="login" style="background-color:white;">Login here</a></p>
             </div>
            </div> 
  </form>

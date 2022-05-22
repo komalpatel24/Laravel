@@ -22,7 +22,7 @@
 <body> 
     
     <div class="back">
-        @include('header')
+        @include('nav')
     </div>
 
 

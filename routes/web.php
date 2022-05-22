@@ -40,15 +40,18 @@ Route::view("main","main");
 Route::view("irctcp1","irctcp1");
 Route::view("irctcp2","irctcp2");
 Route::view("irctcp3","irctcp3");
+
 #Registeration & Login
 Route::post("registration",[userform::class,"getdata"]);
 Route::view("registration", "Registration");
 Route::post("login",[login::class,"display"]);
 Route::view("login","login");
-Route::post("users",[usersform::class,"getdata"]);
+Route::post("users",[userform::class,"getdata"]);
 #
 Route::post("usersData", [UserController::class, "fetchFormData"]);
 Route::post("login", [UserController::class, "login"]);
+
+
 Route::view("profile", "profile");
 Route::get('/logout', function () {
     if(session()->has('user')){
