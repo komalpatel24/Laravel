@@ -23,6 +23,22 @@
         background-repeat: no-repeat; 
         background-size:cover;
      }
+          button,
+                 input[type=submit], 
+                input[type=reset]{
+                /* display: inline-block; */
+                font-size: 12px;
+                letter-spacing: 1px;
+                cursor: pointer;
+                box-shadow: inset 0 0 0 0 #2d5986;
+                transition: .3s;
+                }
+             button:hover,
+             input[type=submit],
+            input[type=reset]:hover{
+            color: #ffffff;
+            box-shadow: inset 100px 0 0 0 #2d5986;
+            }
   </style>
 </head>
 
@@ -165,7 +181,7 @@
                
             <div class="form-group">
                 <button type="reset" class="btn btn-warning">Reset</button>
-                <button class="btn btn-dark" style="background-color: #001f33; color:white;">Submit</button>
+                <button type="submit" class="btn btn-dark" style="background-color: #001f33; color:white;">Submit</button>
                <p style="color: white;"> Already have an account <a href="login" style="background-color:white;">Login here</a></p>
             </div>
            </div> 

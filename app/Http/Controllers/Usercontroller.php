@@ -19,9 +19,13 @@ class Usercontroller extends Controller
     }
     function login(Request $req)
     {
+        $req->validate([
+            'username' => 'required',
+            'password' => 'required'
+        ]);
         $data = $req->input();
         $req->session()->put('user',$data['username']);
-        // echo session('userName');
+
         return redirect('profile');
     }
 }

@@ -1,7 +1,6 @@
 <?php
 
 use App\Http\Controllers\layout;
-use App\Http\Controllers\login;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\marksheet;
 use App\Http\Controllers\userform;
@@ -44,7 +43,6 @@ Route::view("irctcp3","irctcp3");
 #Registeration & Login
 Route::post("registration",[userform::class,"getdata"]);
 Route::view("registration", "Registration");
-Route::post("login",[login::class,"display"]);
 Route::view("login","login");
 Route::post("users",[userform::class,"getdata"]);
 #
@@ -52,7 +50,9 @@ Route::post("usersData", [UserController::class, "fetchFormData"]);
 Route::post("login", [UserController::class, "login"]);
 
 
-Route::view("profile", "profile");
+Route::view('login','login')->middleware('login');
+Route::view('profile','profile')->middleware('logout');
+
 Route::get('/logout', function () {
     if(session()->has('user')){
         session()->pull('user');

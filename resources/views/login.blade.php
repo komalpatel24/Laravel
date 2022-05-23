@@ -71,14 +71,14 @@
                 font-size: 12px;
                 letter-spacing: 1px;
                 cursor: pointer;
-                box-shadow: inset 0 0 0 0 #00b3b3;
+                box-shadow: inset 0 0 0 0 #009999;
                 transition: .3s;
                 }
             .but button:hover,
             .but input[type=submit],
             input[type=reset]:hover{
             color: #ffffff;
-            box-shadow: inset 100px 0 0 0 #00b3b3;
+            box-shadow: inset 100px 0 0 0 #009999;
             }
             .input i {
             position: relative;
@@ -166,7 +166,7 @@
              <div class="con">
                   <div class="input">
                     <i class="fa-solid fa-user"></i>
-                    <input type="text" name="username" placeholder="UserName"  class="form-control" >
+                    <input type="text" name="username" placeholder="Username"  class="form-control" >
                      <small class="form-text  text-danger">@error('username'){{$message}}@enderror</small>
                   </div>
               </div>
