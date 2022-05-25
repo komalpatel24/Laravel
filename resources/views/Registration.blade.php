@@ -90,20 +90,19 @@
             <div class="row">
                 <div class="col col-sm-5">
                     <div class="form-ckeck text-light">
-                        <label for="department" style="color: white;">Department </label>
+                        <label for="courses" style="color: white;">COURSES </label>
                             <select name="department" class="form-control" id="department">
-                                <option value="" selected disabled>-->Choose Department--</option>
-                                <option value="FULL STAKE">Full Stake</option>
-                                <option value="Designer">Designer</option>
-                                <option value="Developer">Developer</option>
-                                <option value="R & D">R&D</option>
-                                <option value="HR">HR</option>
-                                <option value="Marketing">Marketing</option>
-                                <option value="Sales">Sales</option>
-                                <option value="Accounting">Accounting</option>
-                                <option value="Shipping">Shipping</option>
+                                <option value="" selected disabled>-->Choose Courses--</option>
+                                <option value="Full Stake">Full Stake</option>
+                                <option value="Web Designing">a Web Designing</option>
+                                <option value="Web Development">Web Development</option>
+                                <option value="Graphic Design">Graphic Design</option>
+                                <option value="Video Editing">Video Editing</option>
+                                <option value="CCC">CCC</option>
+                                <option value="Tally">Tally</option>
+                               
                             </select>
-                            <small class="form-text text-danger">@error('department'){{$message}}@enderror</small>
+                            <small class="form-text text-danger">@error('courses'){{$message}}@enderror</small>
                  </div>
             </div>
                 <div class="col col-sm-3">
@@ -140,9 +139,9 @@
                 </div>
                 <div class="col col-sm-6">
                     <div class="form-group text-light">
-                        <label for=""style="color: white;">Salary</label>
-                        <input type="text" class="form-control" placeholder="Salary" name="salary">
-                        <small class="form-text text-danger">@error('salary'){{$message}}@enderror</small>
+                        <label for=""style="color: white;">Qualification</label>
+                        <input type="text" class="form-control" placeholder="Qualification" name="Qualification">
+                        <small class="form-text text-danger">@error('qualification'){{$message}}@enderror</small>
                     </div>
                 </div>
             </div>

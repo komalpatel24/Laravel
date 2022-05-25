@@ -18,7 +18,7 @@ class userform extends Controller
             'gender' => 'required',
             'age' => 'required | numeric | min:1',
             'date_of_birth' => 'required',
-            'salary' => 'required | numeric',
+            'qualification' => 'required ',
             'email' => 'required | email',
             'mobile_no' => 'required | numeric',
             'Imagefile' => 'required'

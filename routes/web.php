@@ -60,7 +60,7 @@ Route::get('/logout', function () {
     return redirect('login');
 });
 
-
+Route::view("webDesigning","webDesigning");
 
 #Globle middleware
 Route::view("noaccess", "noaccess");
