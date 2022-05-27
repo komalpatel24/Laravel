@@ -3,13 +3,17 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\App;
+
+use Illuminate\Support\Facades\DB;
+
 
 class userform extends Controller
 {
-    function getdata(Request $req)
+    function getdata(Request $data)
     {
 
-        $req->validate([
+        $data->validate([
             'firstname' => 'required | min:3 | max:10 | alpha',
             'lastname' => 'required | min:3 | max:10 | alpha',
             'password' => 'required | max:10',
@@ -23,6 +27,7 @@ class userform extends Controller
             'mobile_no' => 'required | numeric',
             'Imagefile' => 'required'
         ]);
-        return $req->input();
+
+        return redirect('login');
     }
 }

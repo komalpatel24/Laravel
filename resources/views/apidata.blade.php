@@ -15,7 +15,7 @@
             border: 1px solid black;
         }
         .main{
-           background-image: url('../emoji/bg4.jpg');
+           background-image: url('../emoji/bg3.jpg');
             background-repeat: no-repeat;
             background-size: cover;
             width:100%;

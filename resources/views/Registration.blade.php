@@ -140,7 +140,7 @@
                 <div class="col col-sm-6">
                     <div class="form-group text-light">
                         <label for=""style="color: white;">Qualification</label>
-                        <input type="text" class="form-control" placeholder="Qualification" name="Qualification">
+                        <input type="text" class="form-control" placeholder="Qualification" name="qualification">
                         <small class="form-text text-danger">@error('qualification'){{$message}}@enderror</small>
                     </div>
                 </div>
@@ -165,27 +165,24 @@
              <div class="form-group">
                     <label for=""  style="color: white;">Image :</label>
                     <div class="custom-file">
-
                         <input type="file" name="Imagefile" class="form-control">
                         <label for=""  style="color: white;" >Choose image file</label>
+                        <span>@error('Imagefile'){{$message}}@enderror</span>
                     </div>
-                
-                 <span>@error('Imagefile'){{$message}}@enderror</span>
-             </div>
+           </div>
         </div>
     </div>
-    
-    <div class="form-group">
+   
+     <div class="form-group">
                 <input type="checkbox" value=""  style="color: white; "> <label style="color:white;"> Remember me</label>
-               
             <div class="form-group">
                 <button type="reset" class="btn btn-warning">Reset</button>
                 <button type="submit" class="btn btn-dark" style="background-color: #001f33; color:white;">Submit</button>
                <p style="color: white;"> Already have an account <a href="login" style="background-color:white;">Login here</a></p>
             </div>
-           </div> 
+     </div> 
  </form>
-    </div>
+</div>
 </body>
 
 </html>

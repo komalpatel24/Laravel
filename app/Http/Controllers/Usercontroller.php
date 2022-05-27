@@ -23,7 +23,7 @@ class Usercontroller extends Controller
             'username' => 'required',
             'password' => 'required'
         ]);
-        $data = $req->input();
+        $data = $req->input( );
         $req->session()->put('user',$data['username']);
 
         return redirect('profile');

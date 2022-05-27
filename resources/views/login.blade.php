@@ -48,7 +48,7 @@
                 margin-top: 5px;
                 margin-left:33px;
                 border-radius: 10px;
-               color: white;
+               /* color: white; */
                font-size: 15px;
                /* background-image:linear-gradient(to right, rgb(102, 0, 0,0.6),rgb(255, 102, 0,0.6)); */
                background-image:linear-gradient(to right, rgb(64, 64, 64,0.6),rgb(92, 138, 138,0.6));
@@ -143,7 +143,7 @@
           } */
           p{
               position: relative;
-              left: 110px;
+              left: 24%;
               top: 20px;
               font-size: 16px;
           }
@@ -166,7 +166,7 @@
              <div class="con">
                   <div class="input">
                     <i class="fa-solid fa-user"></i>
-                    <input type="text" name="username" placeholder="Username"  class="form-control" >
+                    <input type="text" name="username" placeholder="Username"> <br>
                      <small class="form-text  text-danger">@error('username'){{$message}}@enderror</small>
                   </div>
               </div>
@@ -175,7 +175,7 @@
             <div class="con">
                   <div class="input">
                       <i class="fa-solid fa-lock"></i>
-                      <input type="password" name="password" placeholder="password" class="form-control">
+                      <input type="password" name="password" placeholder="password"> <br>
                       <small class="form-text  text-danger">@error('password'){{$message}}@enderror</small>
                   </div>
             </div> <br>

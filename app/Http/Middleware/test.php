@@ -16,9 +16,12 @@ class test
      */
     public function handle(Request $request, Closure $next)
     {
-        if ($request->index && $request->index < 25) {
-            return redirect('noaccess');
-        }
+        // if ($request->index && $request->index < 25) {
+        //     return redirect('noaccess');
+        // }
+        if (session()->has('user')) {
+            return  redirect('profile');
+        }  
         return $next($request);
     }
 }

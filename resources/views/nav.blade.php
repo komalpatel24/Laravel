@@ -11,16 +11,16 @@
 
   <div class="head">
      <ul>
-      <li class="active"><a href="main">HOME</a></li>
+      <li class="active"><a href="home">HOME</a></li>
        <li><a href="#">COURSE</a>
         <ul class="dropdown-content">
-         <li><a href="#">Full Stack</a></li>
-         <li><a href="webDesigning">Web Designing</a></li>
-         <li><a href="#">Web Development</a></li>
-         <li><a href="#">Graphic Design</a></li>
-         <li><a href="#">Video Editing </a></li>
-         <li><a href="#">CCC</a></li>
-         <li><a href="#">Tally</a></li>
+            <li><a href="#">Full Stack</a></li>
+            <li><a href="webDesigning">Web Designing</a></li>
+            <li><a href="#">Web Development</a></li>
+            <li><a href="#">Graphic Design</a></li>
+            <li><a href="#">Video Editing </a></li>
+            <li><a href="#">CCC</a></li>
+            <li><a href="#">Tally</a></li>
         </ul>
      </li>
       <li><a href="registration">REGISTRATION</a></li>
@@ -31,6 +31,9 @@
     
     </ul>
   </div>
+ 
 
 </body>
 </html>
+
+
