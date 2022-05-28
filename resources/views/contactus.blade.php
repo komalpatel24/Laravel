@@ -87,11 +87,32 @@
         .about{
            color: white;
             height: 18vh;
-            background-color:rgb(13, 13, 13,0.9);
+            background-color:rgb(13, 13, 13,0.8);
             text-align: center;
             font-size: 65px;
             top: 20px;
         }
+        .add1{
+            margin-left: 20px;
+            margin-top: 20px;
+            font-size: 20px;
+        }
+        .add{
+            display: flex;
+        }
+        .add2{
+            height: 80%;
+            width: 30%;
+            position: relative;
+            left: 840px;
+            bottom: 140px;
+            border-radius: 6px;
+        }
+        .add2 input{
+            width: 250px;
+            height: 30px;
+            font-size: 15px;
+       }
     </style>
 </head>
 <body>
@@ -116,9 +137,43 @@
                   @include('nav')     
             </div>
             <div class="about">
-               <p> Contact Us</p>
+               <p style="position:relative;top: 12px;"> Contact Us</p>
             </div>
-            <div></div>
    </div>
+
+        <!-- <div class="add"> -->
+            <div class="row">
+                <div class="col col-sm-6 m-5">
+                    <div class="add1">
+                         <big> <b> Branch 1 : </b></big> <br>
+                        60, Ishwarkrupa Society, Section 3, 1st Floor, opp. <br>
+                        Archana Vidhya Bhavan, Lambe Hanuman Road, Surat - 395006. <br><br>
+                        <big>  <b> Branch 2 : </b> </big> <br> 
+                        2nd Floor, Varsha Socity-1, NR Dwarkadish Hospital, <br>
+                        Lambe Hanuman Road, Surat - 395006. <br>
+                    </div>
+                </div>
+                <div class="col col-sm-6 m-5">
+                <div class="add2">
+                        <label for="text">username</label> <br>
+                        <input type="text" placeholder="Name" name="name" autofocus> <br><br>
+                        <label for="text">mobile_no</label> <br>
+                        <input type="text" name="mobile_no" placeholder="Mobile">  <br><br>
+                        <label for="text">Courses</label> <br>
+
+                        <select name="department" class="form-control" style="width: 250px;height:30px;">
+                                        <option value="" selected disabled>-Choose Courses-</option>
+                                        <option value="Full Stake">Full Stake</option>
+                                        <option value="Web Designing">a Web Designing</option>
+                                        <option value="Web Development">Web Development</option>
+                                        <option value="Graphic Design">Graphic Design</option>
+                                        <option value="Video Editing">Video Editing</option>
+                                        <option value="CCC">CCC</option>
+                                        <option value="Tally">Tally</option>
+                            </select> <br><br>
+                </div>
+                </div>
+            </div>
+      <!-- </div> -->
 </body>
 </html>
