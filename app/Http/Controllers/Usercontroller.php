@@ -24,10 +24,21 @@ class Usercontroller extends Controller
             'password' => 'required'
         ]);
         $data = $req->input( );
-        $req->session()->put('user',$data['username']);
+       
 
-        return redirect('profile');
+
+        //  if ($data['username'] === 'admin' && $data['password'] === '123') 
+        //  {
+        //      $data->session()->put('admin', 'admin');
+        //      return redirect('admin_dashboard');
+        //  } 
+        //  else 
+         {
+                 $req->session()->put('user',$data['username']);
+                 return redirect('profile');
+         }
     }
+    
 }
 
 

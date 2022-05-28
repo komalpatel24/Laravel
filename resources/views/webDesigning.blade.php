@@ -7,7 +7,10 @@
     <title>Web Designing</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
     <style>
-       
+       *{
+           margin: 0px;
+           padding: 0px;
+       }
        
         .info p{
             font-size: 50px;
@@ -33,15 +36,23 @@
             box-shadow: inset 100px 0 0 0 #009999;
             }
             .data{
-                outline-style: double;
-               margin-top: 10px;
+                margin-top: 3%;
+                margin-left: 5%;
+            }
+            .head a:hover{
+                        background:rgb(128, 128, 128);
+                        color: #fff;
             }
             .detail{
                 color: darkblue;
+                margin-left: 25%;
             }
             .head {
                 background-color: #404040;
             }
+            /* .copy{
+                font-size: 0.5px;
+            } */
         </style>
 </head>
 <body>
@@ -110,7 +121,9 @@
                 </ul>
             </div>
 
-
+<!-- <div class="copy">
+    <h3>Copyright © 2022 Angel Multimedia Institute | Powered by Angel Multimedia Institute.</h3>
+</div> -->
     
 </body>
 </html>

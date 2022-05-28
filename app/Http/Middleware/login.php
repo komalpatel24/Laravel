@@ -19,6 +19,12 @@ class login
         if (session()->has('user')) {
             return redirect('profile');
         }
+        // if (session()->has('admin')) {
+        //     return redirect('admin_dashboard');
+        // }
+      
+
         return $next($request);
-    }
+    
+  }
 }

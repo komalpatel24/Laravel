@@ -109,7 +109,7 @@
             }
 
     .vertical li a.active {
-        background-color: rgb(38, 38, 38,0.8);
+        background-color:#5c8a8a;
         color: white;
         }
 
@@ -137,7 +137,7 @@
             text-decoration: none;
            position: relative;
            left: 60px;
-           top: 100px;
+           top: 58px;
             color: white;
 
         }
@@ -177,17 +177,20 @@
             width: 250px;
             height: 30px;
             font-size: 15px;
-            
-         }
-        
+       }
         button{
             width: 70px;
             height: 30px;
         }
         h3{
             font-size: 27px;
-           
-            margin-top: 5px;
+             margin-top: 5px;
+        }
+        .foo h3{
+            color: white;
+            position: relative;
+            left: 15%;
+            top: 20%;
         }
     </style>
 </head>
@@ -248,6 +251,7 @@
      </div>
            <div class="footer">
                <div class="foo">
+              <h3> <b style="font-size: 22px;">Contact Us</b> </h3> <br><br>
                     <a href="#"><i class="fa-solid fa-phone"></i> +91 812 816 6631</a>  <br> <br>
                     <a href="hirenunadkat99@gmail.com"> <i class="fa-solid fa-envelope"></i>  anglemultimedia@gmail.com</a> <br> <br>
                     <a href="https://angelmultimedia.com/"> <i class="fa-brands fa-chrome"></i>  www.angelmultimedia.com</a>
@@ -270,19 +274,25 @@
                     
                 </div>
         <div class="inquiry">
-            <form action="" method="POST" style="text-align: center; ">
-                <h3>Contact Us</h3> <br>
+            <form action="main"  style="text-align: center; ">
+                <h3>Inquiry</h3> <br>
                 <input type="text" placeholder="Name" name="name" autofocus> <br><br>
-                <input type="email" placeholder="E-mail" name="email"> <br><br>
+                <select name="department" class="form-control" style="width: 250px;height:30px;">
+                                <option value="" selected disabled>-Choose Courses-</option>
+                                <option value="Full Stake">Full Stake</option>
+                                <option value="Web Designing">a Web Designing</option>
+                                <option value="Web Development">Web Development</option>
+                                <option value="Graphic Design">Graphic Design</option>
+                                <option value="Video Editing">Video Editing</option>
+                                <option value="CCC">CCC</option>
+                                <option value="Tally">Tally</option>
+                               
+                            </select> <br><br>
                 <input type="text" name="mobile_no" placeholder="Mobile">  <br><br>
                 <button type="submit"><b>Submit</b></button>
-
-
             </form>
-        </div>
-
-
-           </div>
+      </div>
+</div>
     
 
     </div>

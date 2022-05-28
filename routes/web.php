@@ -57,8 +57,12 @@ Route::view('profile','profile')->middleware('logout');
 Route::get('/logout', function () {
     if(session()->has('user')){
         session()->pull('user');
+    }return redirect('login');
+
+    if (session()->has('admin')) {
+        session()->pull('admin');
+        return redirect('login');
     }
-    return redirect('login');
 });
 
 Route::view("webDesigning","webDesigning");
@@ -70,6 +74,7 @@ Route::view("middleware", "middleware");
 Route::group(['middleware' => ['admin']], function () {
     Route::view("gallary", "gallary");
     Route::view("main","main");
+    Route::view('contactus','contactus');
 });
 
 #Fetch data from database

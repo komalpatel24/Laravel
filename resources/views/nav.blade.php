@@ -27,7 +27,7 @@
       <li><a href="login">LOGIN </a></li>
       <li><a href="gallary">GALLARY </a></li>
       <li><a href="#">ABOUT US </a></li>
-      <li><a href="#">CONTACT US </a></li>
+      <li><a href="contactus">CONTACT US </a></li>
     
     </ul>
   </div>
