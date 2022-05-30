@@ -13,7 +13,7 @@
         }
         .contact{
             width: 100%;
-          background-color:#5c8a8a;
+          background-color:black;
           height:41px;
             text-decoration: none;
             text-align: center;
@@ -77,10 +77,21 @@
             color: white;
         }
         .navigation{
-            background-color: rgb(0, 0, 128,0.8);
-            text-align: center;
+            background-color:rgb(204, 82, 0);
+             text-align: center;
              height: 40px;
         }
+        .navigation dropdown-content{
+            border-radius: none;
+        }
+        .head a:hover{
+            background-color: black;
+            
+        }
+        .navigation .head a{
+            border-radius: none;
+        }
+       
         .con{
             width: 100%;
             display: flex;
@@ -109,12 +120,12 @@
             }
 
     .vertical li a.active {
-        background-color:#5c8a8a;
+        background-color:rgb(38, 38, 38);
         color: white;
         }
 
         .vertical li a:hover:not(.active) {
-        background-color: rgb(248, 211, 3);
+        background-color: rgb(255, 173, 51);
         color: white;
         }
         .content{
@@ -127,8 +138,12 @@
             width: 10%;
             background-color: gray;
         }
+        .emo img{
+            width: 100%;
+            height: 100%;
+        }
         .footer{
-            background-color:rgb(64, 64, 64);
+            background-color:black;
              border: 1px solid black;
             height: 300px;
             display: flex;
@@ -246,12 +261,12 @@
                     (like using SQL, SQLite, or MongoDB) Client Software</span>
          </div>
            <div class="emo">
-
+            <img src="../emoji/food.jpg" alt="food">
            </div>
      </div>
            <div class="footer">
                <div class="foo">
-              <h3> <b style="font-size: 22px;">Contact Us</b> </h3> <br><br>
+                    <h3> <b style="font-size: 22px;">Contact Us</b> </h3> <br><br>
                     <a href="#"><i class="fa-solid fa-phone"></i> +91 812 816 6631</a>  <br> <br>
                     <a href="hirenunadkat99@gmail.com"> <i class="fa-solid fa-envelope"></i>  anglemultimedia@gmail.com</a> <br> <br>
                     <a href="https://angelmultimedia.com/"> <i class="fa-brands fa-chrome"></i>  www.angelmultimedia.com</a>

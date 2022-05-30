@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://kit.fontawesome.com/74a4c610c1.js" crossorigin="anonymous"></script>
 
-    <title>Document</title>
+    <title>Contact Us</title>
     <style>
         
         *{
@@ -15,8 +15,8 @@
         }
         .contact{
             width: 100%;
-          background-color:#5c8a8a;
-          height:41px;
+            background-color:black;
+            height:41px;
             text-decoration: none;
             text-align: center;
         }
@@ -78,21 +78,35 @@
            height: 80px;
             color: white;
         }
+        .conimg img{
+            height: 400px;
+            width: 100%;
+        }
+        .conimg{
+            position: relative;
+            background-color:rgb(13, 13, 13,0.8);
+            height: 500px;
+        }
+        .conimg p{
+            position: absolute;
+            text-align: center;
+            top: 13%;
+            left: 25%;
+            color: white;
+            font-size: 45px;
+        }
+        .conimg h3{
+            font-size: 33px;
+            text-align: center;
+            color: white;
+            margin: 22px;
+        }
         .navigation{
             background-color: rgb(0, 0, 128,0.8);
             text-align: center;
              height: 40px;
         }
-       
-        .about{
-           color: white;
-            height: 18vh;
-            background-color:rgb(13, 13, 13,0.8);
-            text-align: center;
-            font-size: 65px;
-            top: 20px;
-        }
-        .add1{
+       .add1{
             margin-left: 20px;
             margin-top: 20px;
             font-size: 20px;
@@ -100,6 +114,19 @@
         .add{
             display: flex;
         }
+
+        .foo {
+            text-decoration: none;
+           position: relative;
+           left: 110%;
+           bottom: 150%;
+           color: black;
+          
+        }.foo h3{
+            text-align: center;
+            color: black;
+        }
+
         .add2{
             height: 80%;
             width: 30%;
@@ -131,30 +158,43 @@
             </div>
         </div>
             <div class="header">
-                <img src="../emoji/angel.png" alt="logo" style="margin-top: 8px;">
-            </div>
-            <div class="navigation">
-                  @include('nav')     
-            </div>
-            <div class="about">
-               <p style="position:relative;top: 12px;"> Contact Us</p>
-            </div>
-   </div>
+                        <img src="../emoji/angel.png" alt="logo" style="margin-top: 8px;">
+                    </div>
+                        <div class="navigation">
+                        @include('nav')     
+                    </div>
+                    <div class="conimg">
+                        <img src="../emoji/contact2.png" alt="contact">
+                        <p><b>New Generation New Technology....</b></p>
+                        <h3>Best Computer Class in Lambe Hanuman Road,Surat.</h3>
+                    </div>
+           </div>
 
-        <!-- <div class="add"> -->
+     <div class="add"> 
             <div class="row">
                 <div class="col col-sm-6 m-5">
-                    <div class="add1">
-                         <big> <b> Branch 1 : </b></big> <br>
-                        60, Ishwarkrupa Society, Section 3, 1st Floor, opp. <br>
-                        Archana Vidhya Bhavan, Lambe Hanuman Road, Surat - 395006. <br><br>
-                        <big>  <b> Branch 2 : </b> </big> <br> 
-                        2nd Floor, Varsha Socity-1, NR Dwarkadish Hospital, <br>
-                        Lambe Hanuman Road, Surat - 395006. <br>
-                    </div>
+                       <div class="add1">
+                            <h1> <b> Address </b></h2> <br>
+                                <big> <b> Branch 1 : </b></big> <br>
+                                60, Ishwarkrupa Society, Section 3, 1st Floor, opp. <br>
+                                Archana Vidhya Bhavan, Lambe Hanuman Road, Surat - 395006. <br><br>
+                                <big>  <b> Branch 2 : </b> </big> <br> 
+                                2nd Floor, Varsha Socity-1, NR Dwarkadish Hospital, <br>
+                                Lambe Hanuman Road, Surat - 395006. <br>
+                       </div>
                 </div>
                 <div class="col col-sm-6 m-5">
-                <div class="add2">
+                        <div class="foo">
+                            <h3> <b style="font-size: 22px;">Contact Us</b> </h3> <br><br>
+                            <a href="#"><i class="fa-solid fa-phone"></i> +91 812 816 6631</a>  <br> <br>
+                            <a href="hirenunadkat99@gmail.com"> <i class="fa-solid fa-envelope"></i>  anglemultimedia@gmail.com</a> <br> <br>
+                            <a href="https://angelmultimedia.com/"> <i class="fa-brands fa-chrome"></i>  www.angelmultimedia.com</a>
+                        </div>
+                </div>
+            </div>
+    </div> 
+
+            <div class="add2">
                         <label for="text">username</label> <br>
                         <input type="text" placeholder="Name" name="name" autofocus> <br><br>
                         <label for="text">mobile_no</label> <br>
@@ -172,8 +212,7 @@
                                         <option value="Tally">Tally</option>
                             </select> <br><br>
                 </div>
-                </div>
-            </div>
-      <!-- </div> -->
+
+      
 </body>
 </html>

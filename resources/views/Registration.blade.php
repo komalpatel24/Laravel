@@ -52,7 +52,7 @@
         <li>{{$error}}</li>
         @endforeach
         @endif -->
-        <form action="registration" method="POST" enctype="multipart/form-data">
+        <form action="register" method="POST" enctype="multipart/form-data">
             @csrf
             <h1 style="text-align: center; color:white;">Registration</h1><br>
             <div class="row">

@@ -43,7 +43,7 @@ Route::view("irctcp3","practice.irctcp3");
 
 #Registeration & Login
 Route::post("registration",[userform::class,"getdata"]);
-Route::view("registration", "Registration")->Middleware('test');
+Route::view("registration", "Registration")->Middleware('login');
 Route::view("login","login");
 Route::post("users",[userform::class,"getdata"]);
 #
@@ -59,10 +59,10 @@ Route::get('/logout', function () {
         session()->pull('user');
     }return redirect('login');
 
-    if (session()->has('admin')) {
-        session()->pull('admin');
-        return redirect('login');
-    }
+    // if (session()->has('admin')) {
+    //     session()->pull('admin');
+    //     return redirect('login');
+    // }
 });
 
 Route::view("webDesigning","webDesigning");
