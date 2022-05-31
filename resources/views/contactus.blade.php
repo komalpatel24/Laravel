@@ -245,6 +245,13 @@
                     height: 0.2%;
                     background-color: white;
                 }
+                .copyright{
+                    height: 8vh;
+                    text-align: center;
+                }
+                .copyright h3{
+                    margin-top: 2%;
+                }
     </style>
 </head>
 <body>
@@ -407,10 +414,10 @@
                         <li><a href="">Twitter</a></li>
                     </ul>
                 </div>
-
-
      </div>
-
+              <div class="copyright">
+                   <h3>Copyright © 2022 Angel Multimedia Institute | Powered by Angel Multimedia Institute.</h3> 
+             </div>
  </div>   
 </body>
 </html>
