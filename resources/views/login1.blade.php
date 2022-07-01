@@ -30,14 +30,14 @@
         @endforeach
         @endif -->
         
-        <form action="login_check" method="POST">
+        <form action="login" method="POST">
         {{method_field('PUT')}}
             @csrf
             <div class="form-row" style="margin-top: 5%;">
                 <div class="form-group">
                     <label for="">username</label>
-                    <input type="text" name="userName" class="form-control">
-                    <small class="form-text  text-danger"> @error('username'){{$message}} @enderror </small>
+                    <input type="text" name="username" class="form-control">
+                    <small class="form-text  text-danger"> @error('username'){{$message}}@enderror </small>
                 </div>
             </div>
             <div class="form-row">

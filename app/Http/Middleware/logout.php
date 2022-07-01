@@ -17,10 +17,10 @@ class logout
     public function handle(Request $request, Closure $next)
     {
                if (!session()->has('user')) {
-            return  redirect('login');
+            return  redirect('login1');
         }  
         if (!session()->has('admin')) {
-            return redirect('login');
+            return redirect('login1');
         }
         return $next($request);
     }

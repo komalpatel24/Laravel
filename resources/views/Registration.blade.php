@@ -59,7 +59,7 @@
         <li>{{$error}}</li>
         @endforeach
         @endif -->
-        <form action="register" method="POST" enctype="multipart/form-data">
+        <form action="registration" method="POST" enctype="multipart/form-data">
             @csrf
             <h1 style="text-align: center; color:white;">Registration</h1><br>
             <div class="row">
@@ -67,7 +67,7 @@
                     <div class="form-group text-light">
                         <label for="" style="color: white;">First Name</label>
                         <input type="text" name="firstname" placeholder="First Name" autofocus class="form-control">
-                        <small class="form-text  text-danger">@error('firstna .me'){{$message}}@enderror</small>
+                        <small class="form-text  text-danger">@error('firstname'){{$message}}@enderror</small>
                     </div>
                 </div>
                 <div class="col col-sm-6">
