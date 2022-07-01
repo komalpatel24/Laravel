@@ -13,6 +13,11 @@
       position: sticky;
       top: 0;
       display: flex;
+      background-color: rgb(140, 140, 140,0.8);
+      /* color: red !important; */
+     }
+     .navbar a{
+      color: white;
      }
      
      a:hover {
