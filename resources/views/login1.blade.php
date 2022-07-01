@@ -17,6 +17,11 @@
         label{
             color: white;
         }
+        body{
+            background-image: url(../emoji/Registration-1.jpg);
+             background-repeat: no-repeat; 
+            background-size:cover;
+        }
     </style>
 </head>
 

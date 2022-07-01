@@ -68,7 +68,6 @@ Route::post("registration",[userform::class,"getdata"]);
 Route::view("registration", "Registration")->Middleware('login');
 Route::post("user",[userform::class,"getdata"]);
 Route::view('logout',[logout::class,"logout_check"]);
-
 // Route::view("login","login1");
 Route::post("login",[login::class,"login_check"]);
 Route::view('login','login1')->middleware('login');
