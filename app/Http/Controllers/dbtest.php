@@ -11,4 +11,10 @@ class dbtest extends Controller
     {
         return FacadesDB::select("select * from user");
     }
+    // function tbl(){
+    //     // $detail=facadeDB::select("select * from emp");;
+    //     $detail=employee::all();
+    //     return view("dashboard",["dis"=>$detail]);
+    //     // return admin::all();
+    // }
 }

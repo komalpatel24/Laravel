@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="{{asset('css/home.css')}}">
     <link rel="stylesheet" href="{{asset('css/nav.css')}}">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
 
     <title>ADMIN</title>
     <style>
@@ -28,82 +29,53 @@
 
 <body>
 
-<div class="container">
-       <div class="head">
-            <ul>
-                <li class="active"><a href="home">HOME</a></li>
-                <li><a href="#">COURSE</a>
-                    <ul class="dropdown-content">
-                        <li><a href="#">Full Stack</a></li>
-                        <li><a href="webDesigning">Web Designing</a></li>
-                        <li><a href="#">Web Development</a></li>
-                        <li><a href="#">Graphic Design</a></li>
-                        <li><a href="#">Video Editing </a></li>
-                        <li><a href="#">CCC</a></li>
-                        <li><a href="#">Tally</a></li>
-                    </ul>
-                </li>
-                <li><a href="gallary">GALLARY </a></li>
-                <li><a href="#">ABOUT US </a></li>
-                <li><a href="#">CONTACT US </a></li>
-                <li> <a href="logout">LOGOUT</a> </li>
-            </ul>
-       </div>
-    </div>   
+<div class="mx-auto table-container">
+<nav class="navbar p-1 ">
+       <h1>{{session('admin')}} </h1>
+        <ul class="nav justify-content-end">
+            <li class="nav-item" id="txt_color"> <a href="main" class="btn  btn-md m-1" id="first">Home</a> </li>
+            <li class="nav-item"> <a href="gallary" class="btn btn-md m-1">Gallary</a></li>
+            <li class="nav-item "><a href="logout" class="btn btn-md m-1">Logout</a></li>
+        </ul>
+    </nav>
+                <table class="table  text-center table-responsive">
+                    <thead>
+                        <tr class="text-light" style="background-color:darkslategrey;">
+                            <th>Id</th>
+                            <th>firstname</th>
+                            <th>lastname</th>
+                            <!-- <th>password</th> -->
+                            <!-- <th>confirm_password</th> -->
+                            <th>courses</th>
+                            <th>gender</th>
+                            <th>age</th>
+                            <!-- <th>qualification</th> -->
+                            <th>email</th>
+                            <th>mobile_no</th>
+                            <!-- <th>Imagefile</th> -->
+                            <th>Update</th>
+                            <th>Delete</th>
+                        </tr>
+                    </thead>
 
-    <div class="container-fluid">
-        <h4>{{session('admin')}}</h4>
+                    <tbody>
+                        @foreach($data as $info)
+                        <tr>
+                            <td>{{$info->id}}</td>
+                            <td>{{$info->firstname}}</td>
+                            <td>{{$info->lastname}}</td>
+                            <td>{{$info->courses}}</td>
+                            <td>{{$info->email}}</td>
+                            <td>{{$info->mobile_no}}</td>
+
+                            <td><a data-toggle="modal" data-target="#id-{{$info->id}}" class="btn text-light" style="background-color:darkcyan;">View</a></td>
+                            <td><a href="{{ url('edit', $info->id)}}"><i class="fa-solid fa-pen-to-square text-success"></i></a></td>
+                            <td><a href="{{ url('delete', $info->id)}}"><i class="fa-solid fa-trash-can text-danger"></i></a></td>
+                        </tr>
+                @endforeach
+                    </tbody>
+                </table>
     </div>
-
-    <table class="table text-center">
-
-        <thead>
-            <tr class="bg-warning">
-                <th colspan="14">
-                    <h1>Customer's Records</h1>
-                </th>
-            </tr>
-
-            <tr>
-                <th class="bg-dark text-white">Id</th>
-                <th class="bg-dark text-white">firstname</th>
-                <th class="bg-dark text-white">lastname</th>
-                <th class="bg-dark text-white">password</th>
-                <th class="bg-dark text-white">confirm_password</th>
-                <th class="bg-dark text-white">courses</th>
-                <th class="bg-dark text-white">gender</th>
-                <th class="bg-dark text-white">age</th>
-                <th class="bg-dark text-white">qualification</th>
-                <th class="bg-dark text-white">email</th>
-                <th class="bg-dark text-white">mobile_no</th>
-                <th class="bg-dark text-white">Imagefile</th>
-              
-            </tr>
-        </thead>
-
-        <tbody>
-            @foreach($records as $record)
-            <tr>
-                <td class="bg-light">{{$record->cust_id}}</td>
-                <td class="bg-light">{{$record->firstname}}</td>
-                <td class="bg-light">{{$record->lastname}}</td>
-                <td class="bg-light">{{$record->password}}</td>
-                <td class="bg-light">{{$record->confirm_password}}</td>
-                <td class="bg-light">{{$record->courses}}</td>
-                <td class="bg-light">{{$record->gender}}</td>
-                <td class="bg-light">{{$record->age}}</td>
-                <td class="bg-light">{{$record->qualification}}</td>
-                <td class="bg-light">{{$record->email}}</td>
-                <td class="bg-light">{{$record->mobile_no}}</td>
-                <td class="bg-light"><img src="{{ asset($record->image) }}" width="100" height="75" alt="not connect"> </td>
-               
-            </tr>
-            @endforeach
-        </tbody>
-
-    </table>
-
-    
+   
 </body>
-
 </html>

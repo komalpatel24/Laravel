@@ -16,12 +16,12 @@ class login
      */
     public function handle(Request $request, Closure $next)
     {
-        if (session()->has('user')) {
+        if (session()->has('users')) {
             return redirect('profile');
         }
-        // if (session()->has('admin')) {
-        //     return redirect('admin_dashboard');
-        // }
+        if (session()->has('admin')) {
+            return redirect('admin_dashboard');
+        }
       
 
         return $next($request);

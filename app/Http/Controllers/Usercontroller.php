@@ -25,18 +25,25 @@ class Usercontroller extends Controller
         ]);
         $data = $req->input( );
        
-
-
-        //  if ($data['username'] === 'admin' && $data['password'] === '123') 
-        //  {
-        //      $data->session()->put('admin', 'admin');
-        //      return redirect('admin_dashboard');
-        //  } 
-        //  else 
+    //     {
+    //         $req->session()->put('user',$data['username']);
+    //         return redirect('profile');
+    // }
+  
+        // $data->validate(['username'=>'required','password'=>'required']);
+        // $value=$data->input();
+        // if ($value['username']==="admin" && $value['password']==="361999") {
+        //     $data->session()->put('admin',"admin");
+        //     return redirect('admin_dashboard');
+        // }
+        // else
          {
-                 $req->session()->put('user',$data['username']);
-                 return redirect('profile');
-         }
+            $data->session()->put('users',$req['username']);
+            return redirect('profile');
+        }
+
+     
+       
     }
     
 }

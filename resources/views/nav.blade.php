@@ -6,6 +6,37 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="{{asset('css/nav.css')}}">
+    <style>
+    
+       .tooltiptext {
+            visibility: hidden;
+            width: 90px;
+            background-color: gray;
+            color: #fff;
+            text-align: center;
+            border-radius: 10px;
+            padding: 5px 0;
+            position: absolute;
+            z-index: 1;
+            top: 140%;
+            left: 50%;
+            margin-left: -60px;
+          }
+
+        .tooltiptext::after {
+            content: "";
+            position: absolute;
+            bottom: 100%;
+            left: 50%;
+            margin-left: -5px;
+            border-width: 5px;
+            border-style: solid;
+            border-color: transparent transparent gray transparent;
+          }
+           #t1:hover .tooltiptext {
+              visibility: visible;
+            }
+    </style>
 </head>
 <body>
 
@@ -27,7 +58,10 @@
       <li><a href="login">LOGIN </a></li>
       <li><a href="gallary">GALLARY </a></li>
       <li><a href="#">ABOUT US </a></li>
-      <li><a href="contactus">CONTACT US </a></li>
+      <!-- <div class="t1"> -->
+          <li><a href="contactus" id="t1">CONTACT US 
+          <span class="tooltiptext">Contact</span></a></li>
+      <!-- </div> -->
     
     </ul>
   </div>

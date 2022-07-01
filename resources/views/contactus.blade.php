@@ -12,6 +12,8 @@
         *{
             margin: 0px;
             padding: 0px;
+            font-family: Arial, Helvetica, sans-serif;
+
         }
         .contact{
             width: 100%;
@@ -27,7 +29,7 @@
             text-decoration: none;
             color: black;
            position: relative;
-           left: 350px;
+           left: 330px;
            top: 10px;
            color: white;
 
@@ -39,7 +41,7 @@
             color: black;
             text-align: center;
             position: relative;
-           left:405px;
+           left:395px;
            top: 10px;
            color: white;
 
@@ -65,7 +67,7 @@
             height: 4vh;
             width: 0.1vw;
             position: absolute;
-            left:57.50%;
+            left:59%;
             top: 1%;
             background-color: rgb(255, 255, 255);
         }
@@ -77,6 +79,11 @@
            margin-bottom: 1%;
            height: 10%;
             color: white;
+        }
+        .navigation{
+            background-color: rgb(0, 0, 128,0.8);
+            text-align: center;
+             height: 20%;
         }
         .conimg img{
             height: 83%;
@@ -101,11 +108,7 @@
             color: white;
             margin: 22px;
         }
-        .navigation{
-            background-color: rgb(0, 0, 128,0.8);
-            text-align: center;
-             height: 20%;
-        }
+       
        .add1{
             margin-left: 20px;
             margin-top: 20px;
@@ -117,7 +120,7 @@
         }
 
         .foo {
-        margin-left: 20%;
+        margin-left: 16%;
         margin-top: 2%;
           text-align: center;
         }
@@ -135,7 +138,7 @@
             font-size: 33px;
         }
         .schedule{
-            background-color:rgb(13, 13, 13,0.8);
+            background-image:linear-gradient(to top right ,blue,lightblue);
             color: white;
             height: 47vh;
             display: flex;
@@ -151,14 +154,14 @@
            margin-top: 1%;
        }
        .batch{
-        margin-left: 17%;
+        margin-left: 15%;
            margin-top: 1%; 
        }
        .batch span{
         font-size: 19px;
        }
        .spoken{
-        margin-left: 17%;
+        margin-left: 12%;
            margin-top: 1%; 
        }
        .spoken span{
@@ -174,16 +177,19 @@
         box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
        }
        .inquiry input[type=submit]:hover {
-            background-color: blue;
+        background-image:linear-gradient(to bottom, #404040,#317693,#073ca8); 
+
           }   
           .inquiry input[type=submit] {
-                background-color:gray;
+            background-image:linear-gradient(to top, #404040,#1282d8); 
                 color: white;
                 padding: 12px 20px;
                 border: none;
                 border-radius: 4px;
                 cursor: pointer;
                 align-items: center;
+                border: 1px solid black;
+           
                 }
                 .inquiry input[type=text], select, textarea {
                     width: 100%;
@@ -246,7 +252,7 @@
                     background-color: white;
                 }
                 .copyright{
-                    height: 8vh;
+                    height: 6vh;
                     text-align: center;
                 }
                 .copyright h3{
@@ -284,7 +290,7 @@
 
           <div class="add"> 
                        <div class="add1">
-                                <h1> <b> Address </b></h2> <br>
+                                <h2> <b> Address </b></h2> <br>
                                 <big style="color:blue;"> <b> Branch 1 : </b></big> <br> <br>
                                 60, Ishwarkrupa Society, Section 3, 1st Floor, opp. <br>
                                 Archana Vidhya Bhavan, Lambe Hanuman Road, Surat - 395006. <br><br>
@@ -294,7 +300,7 @@
                        </div>
                                
                         <div class="foo">
-                            <h1> <b>Contact Us</b> </h1> <br><br> <br>
+                            <h2> <b>Contact Us</b> </h2> <br><br> <br>
                             <!-- <a href="#"><i class="fa-solid fa-phone"></i> +91 812 816 6631</a>  <br> <br> -->
                             
                             <a href="#"><i class="fa-solid fa-phone"></i> &nbsp; :  Hiren Sir : +91 812 816 6631</a> <br>

@@ -16,6 +16,7 @@
             background-attachment:fixed;
             width:100%;
             height:800px;
+            
         }
     </style>
 </head>

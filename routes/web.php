@@ -6,7 +6,9 @@ use App\Http\Controllers\marksheet;
 use App\Http\Controllers\userform;
 use App\Http\Controllers\dbtest;
 use App\Http\Controllers\HttpRequest;
+use App\Http\Controllers\login;
 use App\Http\Controllers\Usercontroller;
+use App\Http\Controllers\operator;
 use GuzzleHttp\Middleware;
 
 /*
@@ -31,6 +33,7 @@ Route::get('/', function () {
 Route::get('page2', function () {
     return view('practice.page2');
 });
+Route::view("demo","practice.demo");
 Route::get("marksheet/{sub1}/{sub2}/{sub3}/{sub4}/{sub5}/{sub6}",[marksheet::class,"getPercentage"]);
 Route::get("layout",[Layout::class,"weblayout"]);
 Route::view("gallary","gallary");
@@ -44,26 +47,29 @@ Route::view("irctcp3","practice.irctcp3");
 #Registeration & Login
 Route::post("registration",[userform::class,"getdata"]);
 Route::view("registration", "Registration")->Middleware('login');
-Route::view("login","login");
+
 Route::post("users",[userform::class,"getdata"]);
+// Route::view('logout',[logout::class,"logout_check"]);
 #
 Route::post("usersData", [UserController::class, "fetchFormData"]);
-Route::post("login", [UserController::class, "login"]);
 
-
-Route::view('login','login')->middleware('login');
+Route::view("login","login1");
+Route::put("login_check",[login::class,"login_check"]);
+Route::view('login','login1')->middleware('login');
+Route::view("dashboard","admin_dashboard")->middleware('logout');
 Route::view('profile','profile')->middleware('logout');
 
-Route::get('/logout', function () {
-    if(session()->has('user')){
-        session()->pull('user');
-    }return redirect('login');
 
-    // if (session()->has('admin')) {
-    //     session()->pull('admin');
-    //     return redirect('login');
-    // }
-});
+// Route::get('/logout', function () {
+//     if(session()->has('user')){
+//         session()->pull('user');
+//     }return redirect('login');
+
+//     // if (session()->has('admin')) {
+//     //     session()->pull('admin');
+//     //     return redirect('login');
+//     // }
+// });
 
 Route::view("webDesigning","webDesigning");
 

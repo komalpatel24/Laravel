@@ -60,7 +60,8 @@
       <div class="container m-auto row justify-content-center text-white p-5"> 
           <h1> Hello..... <br>{{session('user')}} <br>Welcome To The Angel Multimedia Institute</h1> 
       </div> 
-     
-      </div>
+        </div>
+        <div class="text-center p-3">
+    </div>
 </body>
 </html>

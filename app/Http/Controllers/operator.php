@@ -3,13 +3,12 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use Illuminate\Support\Facades\App;
-
 use Illuminate\Support\Facades\DB;
 
 
-class userform extends Controller
+class operator extends Controller
 {
+    //
     function getdata(Request $data)
     {
 
@@ -29,22 +28,16 @@ class userform extends Controller
         ]);
 
 
-
         DB::table('users')->insert([
             "firstname" => $data->input('firstname'),
             "lastname" => $data->input('lastname'),
-            "password" => $data->input('password'),
-            "confirm_password" => $data->input('confirm_password'),
             "department" => $data->input('department'),
             "gender" => $data->input('gender'),
             "age" => $data->input('age'),
-            "date_of_birth" => $data->input('date_of_birth'),
-            "qualification" => $data->input('qualification'),
             "email" => $data->input('email'),
-            "mobile_no" => $data->input('mobile_no'),
-            "Imagefile" => $data->input('Imagefile'),
-
+            "mobile_no" => $data->input('mobile_no')
          ]);
+
         return redirect('login');
     }
 }

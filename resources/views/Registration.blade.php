@@ -11,12 +11,19 @@
       *{
           margin: 0px;
           padding: 0px;
+         
       }
+     
       .head{
           background-color:rgb(77, 77, 77);
       }
+      .container{
+        margin-top: 5%;
+          margin-bottom: 5%;
+      }
       .container-fluid a{
           color: white;
+          
       }
      body{
         background-image: url(../emoji/Registration-1.jpg);
@@ -60,7 +67,7 @@
                     <div class="form-group text-light">
                         <label for="" style="color: white;">First Name</label>
                         <input type="text" name="firstname" placeholder="First Name" autofocus class="form-control">
-                        <small class="form-text  text-danger">@error('firstname'){{$message}}@enderror</small>
+                        <small class="form-text  text-danger">@error('firstna .me'){{$message}}@enderror</small>
                     </div>
                 </div>
                 <div class="col col-sm-6">
