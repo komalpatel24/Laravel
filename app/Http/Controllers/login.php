@@ -21,7 +21,7 @@ class login extends Controller
             return redirect('admin_dashboard');
         }
         else {
-            $data->session()->put('users',$value['username']);
+            $data->session()->put('username',$value['username']);
             return redirect('profile');
         }
       

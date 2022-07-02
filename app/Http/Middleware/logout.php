@@ -16,12 +16,12 @@ class logout
      */
     public function handle(Request $request, Closure $next)
     {
-               if (!session()->has('user')) {
+               if (!session()->has('username')) {
             return  redirect('login1');
         }  
-        // if (!session()->has('admin')) {
-        //     return redirect('login1');
-        // }
+        if (!session()->has('admin')) {
+            return redirect('login1');
+        }
         return $next($request);
     }
 }

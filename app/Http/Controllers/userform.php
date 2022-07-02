@@ -4,7 +4,6 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\App;
-
 use Illuminate\Support\Facades\DB;
 
 
@@ -18,7 +17,7 @@ class userform extends Controller
             'lastname' => 'required | min:3 | max:10 | alpha',
             'password' => 'required | max:10',
             'confirm_password' => 'required | max:10',
-            'courses' => 'required',
+            // 'courses' => 'required',
             'department' => 'required',
             'gender' => 'required',
             'age' => 'required | numeric | min:1',
@@ -26,7 +25,7 @@ class userform extends Controller
             'qualification' => 'required ',
             'email' => 'required | email',
             'mobile_no' => 'required | numeric',
-            'Imagefile' => 'required'
+            // 'Imagefile' => 'required'
         ]);
 
 
@@ -36,7 +35,7 @@ class userform extends Controller
             "lastname" => $data->input('lastname'),
             "password" => $data->input('password'),
             "confirm_password" => $data->input('confirm_password'),
-            "courses" => $data->input('courses'),
+            // "courses" => $data->input('courses'),
             "department" => $data->input('department'),
             "gender" => $data->input('gender'),
             "age" => $data->input('age'),

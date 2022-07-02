@@ -7,6 +7,7 @@ use App\Http\Controllers\userform;
 use App\Http\Controllers\dbtest;
 use App\Http\Controllers\HttpRequest;
 use App\Http\Controllers\login;
+use App\Http\Controllers\logout;
 use App\Http\Controllers\Usercontroller;
 use App\Http\Controllers\operator;
 use GuzzleHttp\Middleware;
@@ -65,16 +66,16 @@ Route::view("dashboard","admin_dashboard");
 Route::view("gallary","gallary");
 
 #Registeration & Login
-Route::post("registration",[userform::class,"getdata"]);
+// Route::post("registration",[userform::class,"getdata"]);
 Route::view("registration", "Registration");
-Route::post("user",[userform::class,"getdata"]);
+Route::post("username",[userform::class,"getdata"]);
 Route::view("login1","login1");
-Route::post("login_check",[login::class,"login_check"]);
-// Route::view('logout',[logout::class,"logout_check"]);
+Route::post("login",[login::class,"login_check"])->middleware('login');
+Route::view('logout',[logout::class,"logout_check"]);
 // Route::view('login1','login1')->middleware('login');
-// Route::view("dashboard","admin_dashboard")->middleware('logout');
+Route::view("dashboard","admin_dashboard")->middleware('logout');
 Route::view('profile','profile')->middleware('logout');
-
+Route::view('profile','profile');
 
 // Route::get('/logout', function () {
 //     if(session()->has('user')){

@@ -16,7 +16,7 @@ class login
      */
     public function handle(Request $request, Closure $next)
     {
-        if (session()->has('user')) {
+        if (session()->has('username')) {
             return redirect('profile');
         }
         if (session()->has('admin')) {
