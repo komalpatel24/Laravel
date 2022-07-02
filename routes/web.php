@@ -68,10 +68,10 @@ Route::view("gallary","gallary");
 Route::post("registration",[userform::class,"getdata"]);
 Route::view("registration", "Registration");
 Route::post("user",[userform::class,"getdata"]);
-Route::view('logout',[logout::class,"logout_check"]);
-// Route::view("login","login1");
-Route::post("login1",[login::class,"login_check"]);
-Route::view('login1','login1')->middleware('login');
+Route::view("login1","login1");
+Route::post("login_check",[login::class,"login_check"]);
+// Route::view('logout',[logout::class,"logout_check"]);
+// Route::view('login1','login1')->middleware('login');
 // Route::view("dashboard","admin_dashboard")->middleware('logout');
 Route::view('profile','profile')->middleware('logout');
 
