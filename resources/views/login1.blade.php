@@ -35,8 +35,8 @@
         @endforeach
         @endif -->
         
-        <form action="login" method="POST">
-        {{method_field('PUT')}}
+        <form action="login1" method="POST">
+        <!-- {{method_field('PUT')}} -->
             @csrf
             <div class="form-row" style="margin-top: 5%;">
                 <div class="form-group">

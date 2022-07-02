@@ -11,7 +11,6 @@
       *{
           margin: 0px;
           padding: 0px;
-         
       }
      
       .head{
@@ -59,7 +58,7 @@
         <li>{{$error}}</li>
         @endforeach
         @endif -->
-        <form action="registration" method="POST" enctype="multipart/form-data">
+        <form action="login1" method="POST" enctype="multipart/form-data">
             @csrf
             <h1 style="text-align: center; color:white;">Registration</h1><br>
             <div class="row">

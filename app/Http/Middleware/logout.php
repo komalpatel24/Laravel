@@ -19,9 +19,9 @@ class logout
                if (!session()->has('user')) {
             return  redirect('login1');
         }  
-        if (!session()->has('admin')) {
-            return redirect('login1');
-        }
+        // if (!session()->has('admin')) {
+        //     return redirect('login1');
+        // }
         return $next($request);
     }
 }

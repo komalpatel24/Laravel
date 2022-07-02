@@ -55,13 +55,14 @@
         </ul>
      </li>
       <li><a href="registration">REGISTRATION</a></li>
-      <li><a href="login">LOGIN </a></li>
+      <li><a href="login1">LOGIN </a></li>
       <li><a href="gallary">GALLARY </a></li>
       <li><a href="#">ABOUT US </a></li>
       <!-- <div class="t1"> -->
           <li><a href="contactus" id="t1">CONTACT US 
           <span class="tooltiptext">Contact</span></a></li>
       <!-- </div> -->
+      <li><a href="dashboard">DASHBOARD </a></li>
     
     </ul>
   </div>

@@ -89,10 +89,12 @@
         </div>
       </li>
       <li><a href="registration" class="btn  btn-md m-1">REGISTRATION</a></li>
-      <li><a href="login" class="btn  btn-md m-1">LOGIN </a></li>
+      <li><a href="login1" class="btn  btn-md m-1">LOGIN </a></li>
       <li><a href="gallary" class="btn  btn-md m-1">GALLARY </a></li>
       <li><a href="#" class="btn  btn-md m-1">ABOUT US </a></li>
-      <li><a href="#" class="btn  btn-md m-1">CONTACT US </a></li>
+      <li><a href="contactus" class="btn  btn-md m-1">CONTACT US </a></li>
+      <li><a href="dashboard">DASHBOARD </a></li>
+
     </ul>
   </div>
 </nav>

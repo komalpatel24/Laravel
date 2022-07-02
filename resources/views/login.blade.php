@@ -161,7 +161,7 @@
             <!-- <img src="../emoji/f10.jpg" alt="form"><br> -->
              <h1 style="text-align:center;" >Login</h1> <br>
              
-             <form action="login" method="POST"enctype="multipart/form-data">
+             <form action="" method="POST"enctype="multipart/form-data">
              @csrf
              <div class="con">
                   <div class="input">

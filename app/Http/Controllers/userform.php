@@ -18,6 +18,7 @@ class userform extends Controller
             'lastname' => 'required | min:3 | max:10 | alpha',
             'password' => 'required | max:10',
             'confirm_password' => 'required | max:10',
+            'courses' => 'required',
             'department' => 'required',
             'gender' => 'required',
             'age' => 'required | numeric | min:1',
@@ -35,6 +36,7 @@ class userform extends Controller
             "lastname" => $data->input('lastname'),
             "password" => $data->input('password'),
             "confirm_password" => $data->input('confirm_password'),
+            "courses" => $data->input('courses'),
             "department" => $data->input('department'),
             "gender" => $data->input('gender'),
             "age" => $data->input('age'),
@@ -45,6 +47,6 @@ class userform extends Controller
             "Imagefile" => $data->input('Imagefile'),
 
          ]);
-        return redirect('login');
+        return redirect('login1');
     }
 }
