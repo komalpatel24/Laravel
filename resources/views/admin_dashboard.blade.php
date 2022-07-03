@@ -31,13 +31,14 @@
 
 <div class="mx-auto table-container">
 <nav class="navbar p-1 ">
-       <h1>{{session('admin')}} </h1>
         <ul class="nav justify-content-end">
             <li class="nav-item" id="txt_color"> <a href="main" class="btn  btn-md m-1" id="first">Home</a> </li>
             <li class="nav-item"> <a href="gallary" class="btn btn-md m-1">Gallary</a></li>
-            <li class="nav-item "><a href="logout" class="btn btn-md m-1">Logout</a></li>
+            <li class="nav-item "><a href="{{ url('logout') }}" class="btn btn-md m-1">Logout</a></li>
         </ul>
     </nav>
+    <h1>{{session('admin')}}</h1>
+
                 <table class="table  text-center table-responsive">
                     <thead>
                         <tr class="text-light" style="background-color:darkslategrey;">
@@ -69,8 +70,8 @@
                             <td>{{$info->mobile_no}}</td>
 
                             <td><a data-toggle="modal" data-target="#id-{{$info->id}}" class="btn text-light" style="background-color:darkcyan;">View</a></td>
-                            <td><a href="{{ url('edit', $info->id)}}"><i class="fa-solid fa-pen-to-square text-success"></i></a></td>
-                            <td><a href="{{ url('delete', $info->id)}}"><i class="fa-solid fa-trash-can text-danger"></i></a></td>
+                            <td><a href="#}}"><i class="fa-solid fa-pen-to-square text-success"></i></a></td>
+                            <td><a href="#"><i class="fa-solid fa-trash-can text-danger"></i></a></td>
                         </tr>
                 @endforeach
                     </tbody>

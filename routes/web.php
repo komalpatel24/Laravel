@@ -62,20 +62,21 @@ Route::group(['middleware' => ['admin']], function () {
 #PROJECT ROUTE
 Route::post("usersData", [UserController::class, "fetchFormData"]);
 Route::view("webDesigning","webDesigning");
-Route::view("dashboard","admin_dashboard");
 Route::view("gallary","gallary");
 
 #Registeration & Login
 // Route::post("registration",[userform::class,"getdata"]);
 Route::view("registration", "Registration");
-Route::post("username",[userform::class,"getdata"]);
+Route::post("userform",[userform::class,"getdata"]);
 Route::view("login1","login1");
-Route::post("login",[login::class,"login_check"])->middleware('login');
-Route::view('logout',[logout::class,"logout_check"]);
-// Route::view('login1','login1')->middleware('login');
-Route::view("dashboard","admin_dashboard")->middleware('logout');
-Route::view('profile','profile')->middleware('logout');
+Route::post("login",[login::class,"login_check"]);
+// Route::post("login",[login::class,"login_check"])->middleware('login');
+Route::get('logout',[logout::class,"logout_check"]);
+Route::view("admin_dashboard","admin_dashboard")->middleware('logout');
+// Route::view('profile','profile')->middleware('logout');
+Route::view("admin_dashboard","admin_dashboard");
 Route::view('profile','profile');
+// Route::view('login1','login1')->middleware('login');
 
 // Route::get('/logout', function () {
 //     if(session()->has('user')){

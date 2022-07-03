@@ -58,7 +58,7 @@
         <li>{{$error}}</li>
         @endforeach
         @endif -->
-        <form action="username" method="POST" enctype="multipart/form-data">
+        <form action="userform" method="POST" enctype="multipart/form-data">
             @csrf
             <h1 style="text-align: center; color:white;">Registration</h1><br>
             <div class="row">
@@ -97,7 +97,7 @@
                 <div class="col col-sm-5">
                     <div class="form-ckeck text-light">
                         <label for="courses" style="color: white;">COURSES </label>
-                            <select name="department" class="form-control" id="department">
+                            <select name="courses" class="form-control" id="department">
                                 <option value="" selected disabled>-->Choose Courses--</option>
                                 <option value="Full Stake">Full Stake</option>
                                 <option value="Web Designing">a Web Designing</option>

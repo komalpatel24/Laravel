@@ -52,7 +52,7 @@
                 <li><a href="gallary">GALLARY </a></li>
                 <li><a href="#">ABOUT US </a></li>
                 <li><a href="contactus">CONTACT US </a></li>
-                <li> <a href="logout">LOGOUT</a> </li>
+                <li> <a href="{{ url('logout') }}">LOGOUT</a> </li>
             </ul>
        </div>
     </div>   

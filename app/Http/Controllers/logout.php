@@ -8,8 +8,8 @@ class logout extends Controller
 {
     //
     function logout_check(){
-        if(session()->has('username')){
-            session()->pull('username');
+        if(session()->has('user')){
+            session()->pull('user');
               return redirect('login1');  
         }
         if(session()->has('admin')){

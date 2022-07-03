@@ -17,15 +17,14 @@ class userform extends Controller
             'lastname' => 'required | min:3 | max:10 | alpha',
             'password' => 'required | max:10',
             'confirm_password' => 'required | max:10',
-            // 'courses' => 'required',
-            'department' => 'required',
+            'courses' => 'required',
             'gender' => 'required',
             'age' => 'required | numeric | min:1',
             'date_of_birth' => 'required',
             'qualification' => 'required ',
             'email' => 'required | email',
             'mobile_no' => 'required | numeric',
-            // 'Imagefile' => 'required'
+            'Imagefile' => 'required'
         ]);
 
 
@@ -35,8 +34,7 @@ class userform extends Controller
             "lastname" => $data->input('lastname'),
             "password" => $data->input('password'),
             "confirm_password" => $data->input('confirm_password'),
-            // "courses" => $data->input('courses'),
-            "department" => $data->input('department'),
+            "courses" => $data->input('courses'),
             "gender" => $data->input('gender'),
             "age" => $data->input('age'),
             "date_of_birth" => $data->input('date_of_birth'),
