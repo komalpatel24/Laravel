@@ -14,10 +14,10 @@ class login extends Controller
                         'password'=>'required'
                     ]);
 
-        $value=$data->input( );
+        $value=$data->input();
         
         if ($value['username']==="admin" && $value['password']==="361999") {
-            $data->session()->put('admin',"admin");
+            $data->session()->put("admin","admin");
             return redirect('admin_dashboard');
         }
         else {

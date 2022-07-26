@@ -66,12 +66,12 @@ Route::view("gallary","gallary");
 
 #Registeration & Login
 // Route::post("registration",[userform::class,"getdata"]);
-Route::view("registration", "Registration");
 Route::post("userform",[userform::class,"getdata"]);
+Route::view("registration", "Registration");
 Route::view("login1","login1");
 // Route::post("login",[login::class,"login_check"]);
 Route::post("login",[login::class,"login_check"])->middleware('login');
-Route::get('logout',[logout::class,"logout_check"])->middleware('logout');
+Route::get("logout",[logout::class,"logout_check"])->middleware('logout');
 // Route::view("admin_dashboard","admin_dashboard")->middleware('logout');
 // Route::view('profile','profile')->middleware('logout');
 Route::view("admin_dashboard","admin_dashboard");

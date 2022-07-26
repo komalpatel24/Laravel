@@ -23,7 +23,6 @@ class login
             return redirect('admin_dashboard');
         }
       
-
         return $next($request);
     
   }

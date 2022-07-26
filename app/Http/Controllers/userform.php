@@ -24,12 +24,10 @@ class userform extends Controller
             'qualification' => 'required ',
             'email' => 'required | email',
             'mobile_no' => 'required | numeric',
-            'Imagefile' => 'required'
+            // 'Imagefile' => 'required'
         ]);
 
-
-
-        DB::table('users')->insert([
+        DB::table('student')->insert([
             "firstname" => $data->input('firstname'),
             "lastname" => $data->input('lastname'),
             "password" => $data->input('password'),

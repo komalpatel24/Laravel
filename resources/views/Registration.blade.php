@@ -87,7 +87,7 @@
                 </div>
                 <div class="col col-sm-6">
                     <div class="form-group text-light">
-                        <label for=""style="color: white;">Confirm_password</label>
+                        <label for=""style="color: white;">Confirm_Password</label>
                         <input type="password" name="confirm_password" placeholder="Confirm_password" class="form-control">
                         <small class="form-text text-danger">@error('confirm_password'){{$message}}@enderror</small>
                     </div>

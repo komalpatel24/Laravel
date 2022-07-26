@@ -38,7 +38,7 @@ class Usercontroller extends Controller
         // }
         // else
          {
-            $data->session()->put('users',$req['username']);
+            $req->session()->put('users',$data['username']);
             return redirect('profile');
         }
 
